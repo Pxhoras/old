@@ -20,6 +20,21 @@ h4 {
   text-align: center;
   margin: 0;
 }
+.opensource {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(60, 101, 233);
+    text-align: center;
+    font-size: 14px;
+}
+
+.open {
+    
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(60, 101, 233);
+    font-size: 14px;
+    display: inline;
+
+}
 
 .btn-success {
   display: inline;
@@ -122,4 +137,8 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   font: 15px;
+}
+.kilometers {
+    display: block;
+    font-size: 10px;
 }
