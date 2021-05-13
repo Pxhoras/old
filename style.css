@@ -45,7 +45,7 @@ p {
   margin: 0px;
 }
 
-.sprint {
+.spring {
   width: 275px
 }
 
@@ -69,10 +69,6 @@ p {
 
 .searcher {
   display: inline;
-}
-
-.style:hover {
-  background-color: rgb(187, 144, 2);
 }
 
 .weather {
@@ -183,6 +179,7 @@ p {
 .bottom {
   margin-bottom: 20px;
 }
+
 .label-icon,
 .card-title,
 .card-subtitle {
@@ -192,6 +189,7 @@ p {
   color: slategrey;
   font-weight: 300;
 }
+
 .label-icon {
   color: rgb(60, 101, 233);
   font-size: 10px;
@@ -201,14 +199,17 @@ p {
   font-weight: 300;
   padding-bottom: 20px;
 }
+
 .frame-search {
   background-color:white;
-  opacity: 80%;
-  border: none;
+  border: 1px solid rgb(12, 3, 66, .1);
+  border-radius: 15px;
   color:rgb(12, 3, 66);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   font: 15px;
+  opacity: 80%;
+  width: 400px;
 }
 .kilometers {
     display: block;
@@ -219,12 +220,18 @@ p {
   background: white;
   border-radius: 20px;
   color: rgb(60, 101, 233);
-  
-
 }
 
 .search {
   background: rgb(60, 101, 233);
   border-radius: 20px;
   color: white;
+}
+
+.search:hover {
+  background:rgb(1, 13, 82);
+}
+
+.current:hover {
+  background:rgb(1, 13, 82);
 }
