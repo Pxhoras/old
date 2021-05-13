@@ -23,7 +23,6 @@
   </head>
 
   <body>
-    
     <div class="container">
       <div class="card" style="max-width: 40rem;">
         <div class="card-body">
@@ -45,101 +44,51 @@
           <button id="current-location-button" type="button" class="btn btn-success">Current</button>
           <h1 class="city" id="place-weather"></h1>
           <h4 id="date-information">Mon Mar 1</h4>
+          <div class="row">
+            <div class="col">
+              <div class="card bottom">
+                <div class="card-body">
           <h2 class="temperature" id="temperature-change"></h2>
           <a href="#"><span class="conversions" id="fahrenheit-temperature">F° |</a></span>
           <a href="#"><span class="centigrades" id="centigrade-temperature"> C° </a></span>
-          <img
-            src="images/Rainy-cover.svg"
-            alt="icon for rainy weather with cloud and rain"
-            class="main-icon"
-          />
+          <i class="fas fa-cloud" alt="icon for rainy weather with cloud and rain"></i>
           <h3 class="label-big-icon" id="description"></h3>
-          <div class="row">
-            <div class="col">Humidity</div>
-             <div class="col">Pressure</div>
-            <div class="col">Wind</div>
           </div>
-          <div class="row">
-            <div class="col data"id="humidity"></div>
-             <div class="col data"id="pressure"></div>
-             <div class="col data"id="wind"><h6 class="kilometers"></div> 
           </div>
+          </div>
+          <div class="col">
+            <div class="card bottom">
+              <div class="card-body">
+                <img src="images/sprint.svg" alt="Image of happy gilr in Spaint weather" class="sprint">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
           <div class="row">
-            <div class="col">
-              <div class="card bottom">
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Mon 1</h6>
-                  <h5 class="card-title">54/<span class="night">41</span></h5>
-                  <img
-                    src="images/Cloudy.svg"
-                    alt="icon for rainy and cover weather"
-                    class="small-icon"
-                  />
-                  <h6 class="label-icon">Cloudy</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card bottom">
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Tue 2</h6>
-                  <h5 class="card-title">60/<span class="night">42</span></h5>
-                  <img
-                    src="images/Cloudy.svg"
-                    alt="icon for rainy and cover weather"
-                    class="small-icon"
-                  />
-                  <h6 class="label-icon">Cloudy</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card bottom">
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Wed 3</h6>
-                  <h5 class="card-title">63/<span class="night">39</span></h5>
-                  <img
-                    src="images/Cloudy.svg"
-                    alt="icon for rainy and cover weather"
-                    class="small-icon"
-                  />
-                  <h6 class="label-icon">Cloudy</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card bottom">
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Thur 4</h6>
-                  <h5 class="card-title">61/<span class="night">38</span></h5>
-                  <img
-                    src="images/Rainy-cover.svg"
-                    alt="icon for rainy and cover weather"
-                    class="small-icon"
-                  />
-                  <h6 class="label-icon">Rainy</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card bottom">
-                <div class="card-body">
-                  <h6 class="card-subtitle mb-2 text-muted">Fri 5</h6>
-                  <h5 class="card-title">58/<span class="night">40</span></h5>
-                  <img
-                    src="images/Rainy-cover.svg"
-                    alt="icon for rainy and cover weather"
-                    class="small-icon"
-                  />
-                  <h6 class="label-icon">Rainy</h6>
-                </div>
+            <ul>
+                <li>Humidity: <span class="col data"id="humidity"></span>%</li>
+                <li>Wind: <span class="col data"id="wind"></span>km/h</li>
+            </ul>
+          </div>
+         <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <i class="fas fa-cloud prevision" alt="icon for rainy weather with cloud and rain" ></i>
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">XX°</span>
+                <span class="weather-forecast-temperature-min">XX°</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="opensource"><a href="https://github.com/Pxhoras/My-UIUX-Weather-app.git" target="_blank">Opensource code</a><div class="open"> by Soledad😁</div></h2>
     </div>
+  </div>
+
+      <h2 class="opensource"><a href="https://github.com/Pxhoras/My-UIUX-Weather-app.git" target="_blank">Opensource code</a><div class="open"> by Soledad😁</div></h2>
     <script src="script.js"></script>
   </body>
 </html>

@@ -23,7 +23,7 @@ let month = months[currentDate.getMonth()];
 
 let date = currentDate.getDate();
 let hour = currentDate.getHours();
-h4.innerHTML = `<p>Today,  ${weekDay} ${month} ${date} </p> <p>${hour}:${minutes}</p>`;
+h4.innerHTML = `<p class="paragraph">Today,  ${weekDay} ${month} ${date} </p> <p>${hour}:${minutes}</p>`;
 
 
 function displayWeather(response){
@@ -31,8 +31,7 @@ function displayWeather(response){
   document.querySelector("#place-weather").innerHTML=response.data.name;
   document.querySelector("#temperature-change").innerHTML=Math.round(response.data.main.temp);
   document.querySelector("#wind").innerHTML=Math.round(response.data.wind.speed);
- document.querySelector("#humidity").innerHTML=response.data.main.humidity;
- document.querySelector("#pressure").innerHTML=response.data.main.pressure;
+ document.querySelector("#humidity").innerHTML=response.data.main.humidity;5
  document.querySelector("#description").innerHTML=response.data.weather[0].main;
 }
 
