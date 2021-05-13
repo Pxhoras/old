@@ -1,11 +1,12 @@
 h1 {
+  font-size: 70px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 40px 0 0 0;
 }
 
 h2 {
-  color: rgb(60, 101, 233);
+  color: white;
   font-weight: bolder;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 75px;
@@ -14,20 +15,28 @@ h2 {
 }
 
 h4 {
-  color: rgb(96, 109, 122);
+  color: aquamarine;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
   margin: 0;
 }
+
 li {
+  color: white;
   list-style: none;
   font-size: 14px;
 }
 
 p {
-  color: rgb(21, 21, 119);
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 200;
   line-height: -5;
+}
+
+.container{
+  height: 1100px;
 }
 
 .paragraph {
@@ -74,20 +83,21 @@ p {
 }
 
 .city {
-  color: rgb(59, 66, 73);
+  color:white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
 }
 
 .label-big-icon {
-  color: rgb(60, 101, 233);
-  font-size: 24px;
-  font-weight: 400;
+  color:white;
+  font-size: 20px;
+  font-weight: 200;
   text-align: center;
   margin-bottom: 70px;
 }
 
 .card-body {
+  background: rgb(12, 3, 66);
   display: block;
   margin: 0 auto;
   padding:20px;
@@ -103,23 +113,32 @@ p {
   margin: 0 auto;
 }
 
+.whole {
+  background: rgb(12, 3, 66);
+  border: 1px solid aqua;
+  border-radius: 15px;
+  padding:15px;
+
+}
+
 .conversions {
+  color: aquamarine;
   position: absolute;
   font-weight: bold;
-  background: white;
-  right: 75px;
+  right: 70px;
   top: 75px;
 }
 
 .centigrades {
+  color: aquamarine;
   font-weight: normal;
   position: absolute;
-  right: 50px;
+  right: 55px;
   top: 75px;
 }
 
 .fas {
-  color: rgb(19, 19, 129);
+  color: white;
   display: block;
   font-size: 80px;
   margin: 0 auto;
@@ -183,7 +202,10 @@ p {
   padding-bottom: 20px;
 }
 .frame-search {
-  color: gray;
+  background-color:white;
+  opacity: 80%;
+  border: none;
+  color:rgb(12, 3, 66);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   font: 15px;
@@ -191,4 +213,18 @@ p {
 .kilometers {
     display: block;
     font-size: 10px;
+}
+
+.current {
+  background: white;
+  border-radius: 20px;
+  color: rgb(60, 101, 233);
+  
+
+}
+
+.search {
+  background: rgb(60, 101, 233);
+  border-radius: 20px;
+  color: white;
 }

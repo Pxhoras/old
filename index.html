@@ -24,9 +24,8 @@
 
   <body>
     <div class="container">
-      <div class="card" style="max-width: 40rem;">
-        <div class="card-body">
-          <label for="search" class="weather">Search your city below:</label>
+      <div class="card" style="max-width: 700px;">
+        <div class="card-body whole">
           <br  />
           <form class="searcher">
             <input
@@ -38,21 +37,27 @@
               id="city-input"
             />
           </form>
-          <button id="search-city" type="button" class="btn btn-primary">
+          <button id="search-city" type="button" class="search btn btn-primary">
             Search
           </button>
-          <button id="current-location-button" type="button" class="btn btn-success">Current</button>
+          <button id="current-location-button" type="button" class="current btn btn-success">Current</button>
           <h1 class="city" id="place-weather"></h1>
-          <h4 id="date-information">Mon Mar 1</h4>
+          <h4 id="date-information"></h4>
           <div class="row">
             <div class="col">
               <div class="card bottom">
                 <div class="card-body">
           <h2 class="temperature" id="temperature-change"></h2>
           <a href="#"><span class="conversions" id="fahrenheit-temperature">F° |</a></span>
-          <a href="#"><span class="centigrades" id="centigrade-temperature"> C° </a></span>
+          <a href="#"><span class="centigrades" id="centigrade-temperature">C° </a></span>
           <i class="fas fa-cloud" alt="icon for rainy weather with cloud and rain"></i>
           <h3 class="label-big-icon" id="description"></h3>
+          <div class="row">
+            <ul>
+                <li>Humidity: <span class="col data"id="humidity"></span>%</li>
+                <li>Wind: <span class="col data"id="wind"></span>km/h</li>
+            </ul>
+          </div>
           </div>
           </div>
           </div>
@@ -66,12 +71,6 @@
           </div>
         </div>
 
-          <div class="row">
-            <ul>
-                <li>Humidity: <span class="col data"id="humidity"></span>%</li>
-                <li>Wind: <span class="col data"id="wind"></span>km/h</li>
-            </ul>
-          </div>
          <div class="weather-forecast">
           <div class="row">
             <div class="col-2">
@@ -85,10 +84,12 @@
           </div>
         </div>
       </div>
+      <h2 class="opensource"><a href="https://github.com/Pxhoras/My-UIUX-Weather-app.git" target="_blank">Opensource code</a><div class="open"> by Soledad😁</div></h2>
+      <script src="script.js"></script>
     </div>
+    
   </div>
 
-      <h2 class="opensource"><a href="https://github.com/Pxhoras/My-UIUX-Weather-app.git" target="_blank">Opensource code</a><div class="open"> by Soledad😁</div></h2>
-    <script src="script.js"></script>
+
   </body>
 </html>
