@@ -13,8 +13,8 @@ let days =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sa
 let months =["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 let month=months[date.getMonth()];
 let day = days[date.getDay()];
-let dayNumber =date.getDay();
-return `Last Updated,  ${day} ${month} ${dayNumber} at ${hours}:${minutes}</p>`;
+let dayMonth =date.getDate();
+return `Last update, ${day} ${month} ${dayMonth} at ${hours}:${minutes}</p>`;
 }
 
 function displayTemperature (response) {
@@ -31,10 +31,13 @@ function displayTemperature (response) {
   windElement.innerHTML=Math.round(response.data.wind.speed);
   let dateElement=document.querySelector("#date-information");
   dateElement.innerHTML= formatDate(response.data.dt * 1000);
+  let iconElement=document.querySelector("#icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt, response.data.weather[0].icon");
 }
 
 let apiKey = "6ec780629b6faed9d539966bf949a6fb";
-let city ="Madrid";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+let city ="Scranton";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
 axios.get(apiUrl).then(displayTemperature);

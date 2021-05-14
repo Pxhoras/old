@@ -35,6 +35,15 @@ p {
   line-height: -5;
 }
 
+.float-left {
+  color:aquamarine;
+  display: block;
+  font-size: 80px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .container{
   height: 1100px;
 }
