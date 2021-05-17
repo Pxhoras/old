@@ -27,20 +27,26 @@
       <div class="card" style="max-width: 700px;">
         <div class="card-body whole">
           <br  />
-          <form class="searcher">
-            <input
-              type="text"
-              placeholder="City here"
-              class="frame-search"
-              autocomplete="off"
-              autofocus="on"
-              id="city-input"
-            />
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="search btn btn-primary w-80"
+                />
+              </div>
+            </div>
           </form>
-          <button id="search-city" type="button" class="search btn btn-primary">
-            Search
-          </button>
-          <button id="current-location-button" type="button" class="current btn btn-success">Current</button>
           <h1 class="city" id="place-weather"></h1>
           <h4 id="date-information"></h4>
           <div class="row">
@@ -50,7 +56,7 @@
           <h2 class="temperature" id="temperature-change"></h2>
           <a href="#"><span class="conversions" id="fahrenheit-temperature">F° |</a></span>
           <a href="#"><span class="centigrades" id="centigrade-temperature">C° </a></span>
-          <img src=""  alt="Weather icon" id="icon" class="float-left"></i>
+          <img src=""  alt="Weather icon" id="icon" class="fas float-left"></i>
           <h3 class="label-big-icon" id="description"></h3>
           <div class="row">
             <ul>

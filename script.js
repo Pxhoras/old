@@ -33,11 +33,26 @@ function displayTemperature (response) {
   dateElement.innerHTML= formatDate(response.data.dt * 1000);
   let iconElement=document.querySelector("#icon");
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-  iconElement.setAttribute("alt, response.data.weather[0].icon");
+  iconElement.setAttribute("alt", response.data.weather[0].icon);
 }
 
-let apiKey = "6ec780629b6faed9d539966bf949a6fb";
-let city ="Scranton";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+function search(city){
+  let apiKey = "6ec780629b6faed9d539966bf949a6fb";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event){
+  event.preventDefault();
+  let cityInputElement=document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("Madrid");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+//id="city-input"
+//id="search-form"
+//id="search-city"
