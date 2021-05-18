@@ -116,18 +116,26 @@ p {
 
 .conversions {
   color: aquamarine;
+  cursor:default;
   position: absolute;
-  font-weight: bold;
   right: 70px;
   top: 90px;
+}
+.conversions:hover {
+text-decoration: none;
+font-weight: 900;
 }
 
 .centigrades {
   color: aquamarine;
-  font-weight: normal;
   position: absolute;
   right: 55px;
   top: 90px;
+}
+
+.centigrades:hover{
+  text-decoration: none;
+  font-weight: 900;
 }
 
 .fas {
